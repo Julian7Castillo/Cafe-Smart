@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Café Smart</title>
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     
 </head>
@@ -17,20 +17,20 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="{% url 'index'%}">Inicio</a></li>
+                <li><a href="{% url 'servicios'%}">Servicios</a></li>
+                <li><a href="{% url 'nosotros'%}">Nosotros</a></li>
+                <li><a href="{% url 'contactanos'%}">Contacto</a></li>
             </ul>
         </nav>
         <div class="cta">
-            <a href="#llamanos" class="button">Contáctanos</a>
+            <a href="{% url 'login'%}" class="button">Login</a>
         </div>
     </header>
 
     <section id="inicio" class="inicio">
         <div class="inicio-contenido">
-            <h1>Bienvenidos a Café Smart</h1>
+            <h1>Cada grano tiene un viaje, nosotros te lo contamos.</h1>
             <p>Optimización del mercado agrícola para cafés especiales</p>
             <p>En *Café Smart*, estamos revolucionando la industria del café especial mediante el uso de tecnologías avanzadas como la trazabilidad digital, la inteligencia artificial y el análisis de datos. Nuestro objetivo es garantizar la transparencia en la cadena de valor del café, ayudando a los productores a tomar decisiones informadas y mejorando la competitividad del sector.</p>
             

@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Smart</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    
+</head>
+<body>
+    <header>
+        <div class="flex m-menu">
+            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+            <label for="abrir-cerrar">
+                <p class="barras">
+                    &#9776; 
+                </p>
+                <span class=""></span><span class="cerrar sp"></span>
+            </label>
+            
+            <div id="sidebar" class="sidebar">
+                <ul>
+                    <li><h3><b>Menú</b></h3></li><br>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href=""> Identificación de Fincas</a></li>
+                    <li><a href=""> Producción y Cosecha</a></li>
+                    <li><a href=""> Almacenamiento</a></li>
+                    <li><a href="">Transporte y Logística</a></li>
+                    <li><a href="">Comercialización y ventas</a></li>
+                    <li><a href="">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="{% static 'img/grano.png' %}" alt="Logo de mi proyecto">
+            <span class="project-name">Café Smart</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'index'%}">Inicio</a></li>
+                <li><a href="{% url 'servicios'%}">Servicios</a></li>
+                <li><a href="{% url 'nosotros'%}">Nosotros</a></li>
+                <li><a href="{% url 'contactanos'%}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="img-inicio logologin">
+            <img src="{% static 'img/grano.png' %}" alt="Logo de mi proyecto">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Café Smart</h3>
+                <p>Ofrecemos café especial de la más alta calidad, con trazabilidad y transparencia en todo el proceso de producción. Nos comprometemos con la sostenibilidad y el apoyo a nuestros productores.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Enlaces útiles</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contacto</h4>
+                <p>Email: contacto@cafesmart.com</p>
+                <p>Teléfono: +57 310 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Café Smart. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

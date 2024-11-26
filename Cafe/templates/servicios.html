@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Smart | Servicios</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="{% static 'img/grano.png' %}" alt="Logo de mi proyecto">
+            <span class="project-name">Café Smart</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'index'%}">Inicio</a></li>
+                <li><a href="{% url 'servicios'%}">Servicios</a></li>
+                <li><a href="{% url 'nosotros'%}">Nosotros</a></li>
+                <li><a href="{% url 'contactanos'%}">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="{% url 'login'%}" class="button">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>1. Identificación de la Finca</h3>
+                    <p>Registro detallado de la ubicación, propietario y certificaciones de la finca.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>2. Producción y Cosecha</h3>
+                    <p>Registro de variedades de café, prácticas agrícolas, fechas de siembra y cosecha.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>3. Proceso de Post-Cosecha</h3>
+                    <p>Registro del método de procesamiento, secado y fermentación del café.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>4. Beneficio y Almacenamiento</h3>
+                    <p>Información sobre el tipo de beneficio, certificaciones y condiciones de almacenamiento.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>5. Transporte y Logística</h3>
+                    <p>Documentación de carga, transporte y destinos del café.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>6. Comercialización</h3>
+                    <p>Información sobre el proceso de tostado, molienda, envasado y etiquetado.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>7. Venta y Consumo</h3>
+                    <p>Seguimiento de la distribución, ventas y acceso a información para el consumidor.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Implementación del Sistema</h3>
+                    <p>Software de trazabilidad, capacitación, monitoreo y auditoría del sistema.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Café Smart</h3>
+                <p>Ofrecemos café especial de la más alta calidad, con trazabilidad y transparencia en todo el proceso de producción. Nos comprometemos con la sostenibilidad y el apoyo a nuestros productores.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Enlaces útiles</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contacto</h4>
+                <p>Email: contacto@cafesmart.com</p>
+                <p>Teléfono: +57 310 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Café Smart. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
