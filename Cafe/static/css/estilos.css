@@ -1,0 +1,341 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif para todo el sitio */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333333; /* Texto gris oscuro */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333333; /* Fondo turquesa */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Logo y nombre del proyecto */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo img {
+    height: 50px; /* Tamaño del logo */
+}
+
+.project-name {
+    font-size: 20px; /* Tamaño del texto del nombre */
+    font-weight: bold;
+    color: #ffffff; /* Blanco para el texto */
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif */
+}
+
+/* Navegación */
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li {
+    margin: 0;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white; /* Blanco para contraste */
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif */
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #c2895b; /* Marrón cálido al pasar el cursor */
+}
+
+/* Botón CTA */
+.cta .button {
+    text-decoration: none;
+    background-color: #c2895b; /* Marrón cálido */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif */
+    transition: background-color 0.3s;
+}
+
+.cta .button:hover {
+    background-color: #b07450; /* Marrón ligeramente más oscuro */
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta {
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #121212; /* Fondo oscuro casi negro */
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: #f4f4f4; /* Texto más claro para mejor contraste */
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #c2895b; /* Color marrón cálido al pasar el cursor */
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #1a1a1a; /* Gris más oscuro para la parte inferior */
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: white;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Otras secciones */
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.inicio-contenido {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.inicio h1 {
+    font-size: 3rem;
+    color: #707070; /* Color del logo */
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.cta-inicio .button {
+    padding: 10px 20px;
+    background-color: #c2895b; /* Color complementario */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.imagen-principal img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+
+
+.problema {
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Texto en gris oscuro */
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.problema .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.problema h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.problema p {
+    font-size: 1.2rem;
+    color: #707070;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.problema .problema-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.problema .problema-item {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problema .problema-item h3 {
+    font-size: 1.5rem;
+    color: #c2895b; /* Color marrón cálido */
+    margin-bottom: 15px;
+}
+
+.problema .problema-item p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.problema .problema-item:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+@media (max-width: 768px) {
+    .problema .container {
+        width: 90%;
+    }
+
+    .problema h2 {
+        font-size: 2rem;
+    }
+
+    .problema .problema-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .problema .problema-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .problema .problema-item p {
+        font-size: 1rem;
+    }
+}
+
+
+.registro-cultivo {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.registro-cultivo .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.registro-cultivo h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.proceso {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.proceso-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proceso-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.proceso-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .proceso {
+        flex-direction: column;
+    }
+
+    .proceso-item {
+        flex: 1 1 100%;
+    }
+}
+
+

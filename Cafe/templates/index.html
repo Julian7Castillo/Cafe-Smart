@@ -1,0 +1,133 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'img/grano.png' %}" alt="Logo de mi proyecto">
+            <span class="project-name">Café Smart</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="#llamanos" class="button">Contáctanos</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <div class="inicio-contenido">
+            <h1>Bienvenidos a Café Smart</h1>
+            <p>Optimización del mercado agrícola para cafés especiales</p>
+            <p>En *Café Smart*, estamos revolucionando la industria del café especial mediante el uso de tecnologías avanzadas como la trazabilidad digital, la inteligencia artificial y el análisis de datos. Nuestro objetivo es garantizar la transparencia en la cadena de valor del café, ayudando a los productores a tomar decisiones informadas y mejorando la competitividad del sector.</p>
+            
+            <div class="cta-inicio">
+                <a href="#nosotros" class="button">Descubre más sobre nosotros</a>
+            </div>
+        </div>
+        
+        <div class="imagen-principal">
+            <img src="{% static 'img/inicio.png' %}" alt="Imagen representativa de café especial" />
+        </div>
+    </section>
+
+    <section id="problema" class="problema">
+        <div class="container">
+            <h2>El Problema</h2>
+            <p>El mercado de cafés especiales enfrenta varios desafíos que dificultan su comercialización y afectan la confianza en la cadena de valor:</p>
+            <div class="problema-lista">
+                <div class="problema-item">
+                    <h3>Falta de trazabilidad</h3>
+                    <p>Los productores tienen dificultades para garantizar la trazabilidad del producto, lo que impacta la confianza del consumidor final.</p>
+                </div>
+                <div class="problema-item">
+                    <h3>Herramientas limitadas</h3>
+                    <p>La ausencia de herramientas avanzadas para analizar el mercado y predecir precios y demanda afecta la toma de decisiones informadas por parte de los agricultores y comercializadores.</p>
+                </div>
+                <div class="problema-item">
+                    <h3>Impacto en la competitividad</h3>
+                    <p>Esta falta de transparencia y previsión limita la competitividad del sector, especialmente en mercados globales donde la calidad y certificación son cruciales.</p>
+                </div>
+                <div class="problema-item">
+                    <h3>Necesidad de una solución tecnológica</h3>
+                    <p>Es fundamental desarrollar una plataforma que integre trazabilidad, análisis de datos e inteligencia artificial para asegurar transparencia, predicción confiable y optimización logística.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registro-cultivo" class="registro-cultivo">
+        <div class="container">
+            <h2>Registro del Cultivo, Procesamiento y Empaque del Café</h2>
+            <div class="proceso">
+                <!-- Cultivo -->
+                <div class="proceso-item">
+                    <h3>Cultivo del Café</h3>
+                    <p>El café especial se cultiva en condiciones específicas para asegurar una calidad superior. Esto incluye la selección de variedades de café y el manejo cuidadoso de la tierra y el clima.</p>
+                    <img src="cultivo.jpg" alt="Cultivo del café">
+                </div>
+    
+                <!-- Procesamiento -->
+                <div class="proceso-item">
+                    <h3>Procesamiento del Café</h3>
+                    <p>Después de la cosecha, los granos de café se procesan mediante métodos como el húmedo o seco, lo que influye directamente en el sabor y la calidad del café.</p>
+                    <img src="procesamiento.jpg" alt="Procesamiento del café">
+                </div>
+    
+                <!-- Empaque -->
+                <div class="proceso-item">
+                    <h3>Empaque del Café</h3>
+                    <p>Una vez procesado, el café se empaca en materiales que aseguran su frescura y calidad hasta que llegue al consumidor final.</p>
+                    <img src="empaque.jpg" alt="Empaque del café">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Café Smart</h3>
+                <p>Ofrecemos café especial de la más alta calidad, con trazabilidad y transparencia en todo el proceso de producción. Nos comprometemos con la sostenibilidad y el apoyo a nuestros productores.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Enlaces útiles</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contacto</h4>
+                <p>Email: contacto@cafesmart.com</p>
+                <p>Teléfono: +57 310 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Café Smart. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    
+
+
+    
+</body>
+</html>
